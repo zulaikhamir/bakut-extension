@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakut</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="pet-container">
+      <h2 class="sr-only">Bakut — your yellow chick pet</h2>
+      <div class="screen">
+        <div class="name-line">
+          bakut <span class="time-badge" id="time-badge">morning</span>
+        </div>
+
+        <div class="pet-wrap">
+          <div class="pet-canvas-wrap">
+            <canvas id="bakut" width="180" height="180"></canvas>
+            <div class="zzz" id="zzz">💤</div>
+            <div class="hearts" id="hearts">♡</div>
+            <div class="sparkle" id="sparkle">✦</div>
+          </div>
+        </div>
+
+        <div class="mood-line" id="mood-line">bakut is here.</div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-label">hunger</div>
+            <div class="stat-bar">
+              <div class="stat-fill stat-fill-hunger" id="hunger-bar"></div>
+            </div>
+            <div class="stat-val" id="hunger-val">80</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">happy</div>
+            <div class="stat-bar">
+              <div class="stat-fill stat-fill-happy" id="happy-bar"></div>
+            </div>
+            <div class="stat-val" id="happy-val">75</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">energy</div>
+            <div class="stat-bar">
+              <div class="stat-fill stat-fill-energy" id="energy-bar"></div>
+            </div>
+            <div class="stat-val" id="energy-val">90</div>
+          </div>
+        </div>
+
+        <div class="log" id="log">bakut is here. peep.</div>
+      </div>
+
+      <div class="talk-row">
+        <input
+          class="talk-input"
+          type="text"
+          id="talk-input"
+          placeholder="say something to bakut..."
+        />
+        <button class="btn" id="btn-talk" type="button">say ↗</button>
+      </div>
+
+      <div class="actions">
+        <button class="btn" id="btn-feed" type="button">feed</button>
+        <button class="btn" id="btn-pet" type="button">pet</button>
+        <button class="btn" id="btn-play" type="button">play</button>
+        <button class="btn" id="btn-sleep" type="button">sleep</button>
+        <button class="btn" id="btn-poke" type="button">poke</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
